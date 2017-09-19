@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Quiz {
+
+	private static int pontos;
+	private static Scanner input;
+
+	public static void main(String[]args) {
+		
+		input = new Scanner(System.in);
+		
+		pontos = 0;
+		
+		System.out.println("pergunta?");
+		System.out.println("A)RESPOSTA1\nB)RESPOSTA2\nC)RESPOSTA3\nD)RESPOSTA4");
+		
+		if(input.nextLine().equals("ALTERNATIVA CORRETA"))
+		{
+			pontos++;
+		}
+		
+		System.out.println("Você acertou: " +pontos+ " de 10 questões");
+	}
+}
