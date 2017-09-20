@@ -10,7 +10,60 @@ public class Quiz {
 		input = new Scanner(System.in);
 		
 		pontos = 0;
+		System.out.println("Questão 1 - ");
+		System.out.println("Qual é a sintaxe correta para o método principal de uma classe java?");
+		System.out.println("A)public static int main (String [] args)\nB)public int main (String [] args)\nC)public static void main (String [] args)\nD)Nenhuma das opções acima.");
 		
+		if(input.nextLine().equals ("C"))
+		{
+			pontos++;
+		}
+		System.out.println("Questão 2 - ");
+		System.out.println("Quais são as plataformas suportadas pela linguagem de progração Java?");
+		System.out.println("A)Windows\nB)MAC OS\nC)UNIX/Linux\nD)Todas as outras alternativas estão corretas.");
+		
+		if(input.nextLine().equals("D"))
+		{
+			pontos++;
+		}
+		System.out.println("Questão 3 - ");
+		System.out.println("O que é uma classe?");
+		System.out.println("A)Conjunto de funcionalidades da classe\nB)Agrupamento de objetos com a mesma estrutura de dados\nC)Identificador para o método\nD)Conjunto de propriedades da classe");
+		
+		if(input.nextLine().equals("B"))
+		{
+			pontos++;
+		}
+		System.out.println("Questão 4 - ");
+		System.out.println("Quais desses operadores lógicos representa ''ou''");
+		System.out.println("A)&&\nB)||\nC)&\nD)!");
+		
+		if(input.nextLine().equals("B"))
+		{
+			pontos++;
+		}
+		System.out.println("Questão 5 - ");
+		System.out.println("Qual alternativa está correta?");
+		System.out.println("A)print(\"Hello Java\");\nB)Systemoutprintln(\"Hello Java\"); \nC)System.out.println(\"Hello Java\");\nD)Nenhuma das alternativas estão corretas.");
+		
+		if(input.nextLine().equals("C"))
+		{
+			pontos++;
+		}
+		System.out.println("pergunta?");
+		System.out.println("A)RESPOSTA1\nB)RESPOSTA2\nC)RESPOSTA3\nD)RESPOSTA4");
+		
+		if(input.nextLine().equals("ALTERNATIVA CORRETA"))
+		{
+			pontos++;
+		}
+		System.out.println("pergunta?");
+		System.out.println("A)RESPOSTA1\nB)RESPOSTA2\nC)RESPOSTA3\nD)RESPOSTA4");
+		
+		if(input.nextLine().equals("ALTERNATIVA CORRETA"))
+		{
+			pontos++;
+		}
 		System.out.println("pergunta?");
 		System.out.println("A)RESPOSTA1\nB)RESPOSTA2\nC)RESPOSTA3\nD)RESPOSTA4");
 		
@@ -19,6 +72,6 @@ public class Quiz {
 			pontos++;
 		}
 		
-		System.out.println("Voc� acertou: " +pontos+ " de 10 quest�es");
+		System.out.println("Você acertou: " +pontos+ " de 10 questões");
 	}
 }
